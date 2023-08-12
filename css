@@ -1,0 +1,159 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: rgb(183, 101, 101);
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+   
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    
+
+}
+.nav2{
+    display: flex;
+   gap: 6vw;
+   align-items: center;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 800;
+
+}
+.nav2 h4{
+    font-size: 1vw;
+    font-weight: 800;
+}
+.nav2 i{
+    font-size: 2vw;
+    font-weight: 800;
+    display: none;
+}
+.nav2 button{
+   font-size: 20px;
+  
+  
+}
+.cantener{
+    height: calc(100% - 100px);
+    width: 100%;
+   
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+    padding: 5vw 4vw;
+    margin-top: 1.5vw;
+}
+.left h2{
+    font-size: 3vw;
+    line-height: 3.3vw;
+}
+.left h2 span{
+    color:rgb(64, 67, 67);
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 1vw;
+    width: 80%;
+    margin-bottom: 4vw;
+}
+button{
+    padding:1.3vw 2.3vw ;
+    font-size: 1.2vw;
+   background-color:   rgb(64, 67, 67);
+   border: none;
+   border-radius: 5px;
+   color: whitesmoke;
+   font-weight: 700;
+}
+
+
+
+
+.right{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(179, 179, 211); */
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+    padding: 2vw 3vw;
+}
+@media (max-width:600px) {
+    .nav{
+       height: 60px;
+        padding: 0 5vw;
+    }
+    .nav h2{
+        font-size: 7vw;
+    }
+    .nav2 h4{
+        display: none;
+    }
+    .nav2 i{
+        display: block;
+        font-size: 5vw;
+    } 
+   .nav2 button{
+    display: none;
+   }
+   .cantener{
+    height: calc(100% - 60px);
+    flex-direction: column;
+   }
+   .left{
+    width: 100%;
+    height: 50%;
+    
+   }
+
+   .left h2{
+    font-size: 10vw;
+    line-height: 12vw;
+   }
+   .left p{
+    font-size: 4vw;
+    width: 90%;
+    padding: 1vw 3vw;
+    font-weight: 300;
+   }
+   .left button{
+       height: 5vh;
+       width: 25vw;
+       font-size: 3vw;
+       color: aliceblue;
+       cursor: pointer;
+   }
+   .left button:hover{
+    background-color: rgb(176, 90, 90);
+   }
+   .right{
+    width: 100%;
+    height: 50%;
+   }
+}
